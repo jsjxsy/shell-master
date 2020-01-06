@@ -1,3 +1,6 @@
+#查看 系统版本
+uname -a 
+lsb_release -a
 #安装jdk8
 yum install java-1.8.0-openjdk* -y
 #验证是否安装成功
