@@ -47,4 +47,5 @@ sudo nohup java -jar litemall.jar &
 #java
  ps -ef|grep java
 
-
+#zip
+yum install -y unzip zip
