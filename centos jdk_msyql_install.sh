@@ -40,3 +40,6 @@ ubuntu
 sudo apt-get install mysql-server mysql-client
 
 sudo apt-get -f install
+
+#jar
+sudo nohup java -jar litemall.jar &
