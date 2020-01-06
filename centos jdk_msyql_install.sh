@@ -43,3 +43,8 @@ sudo apt-get -f install
 
 #jar
 sudo nohup java -jar litemall.jar &
+
+#java
+ ps -ef|grep java
+
+
