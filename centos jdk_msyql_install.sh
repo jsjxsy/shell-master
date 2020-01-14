@@ -61,6 +61,13 @@ quit;
 sudo nohup java -jar litemall.jar &
 
 #java
+ tar -zxvf jdk-8u221-linux-x64.tar.gz
+ sudo vim /etc/profile
+ export JAVA_HOME=/home/oukele/jdk8/jdk1.8.0_221 (  这里填的是 当前用户所在的目录下的jkd8目录下的 解压文件夹 路径 ，比如我填的 )
+ export JRE_HOME=${JAVA_HOME}/jre  
+ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+ export PATH=${JAVA_HOME}/bin:$PATH
+ java -version
  ps -ef|grep java
 
 #zip
