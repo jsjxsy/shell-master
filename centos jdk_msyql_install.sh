@@ -47,6 +47,16 @@ sudo cat /etc/mysql/debian.cnf
 #2.使用debian-sys-maint用户及密码连接MySQL
 mysql -udebian-sys-maint -pfjEyI0TUWiQiDKvi
 
+show databases;
+use mysql;
+update user set authentication_string=PASSWORD("输入你想设置的密码") where user='root';
+update user set plugin="mysql_native_password";
+flush privileges;
+quit;
+
+#重启MySQL
+/etc/init.d/mysql restart
+
 #jar
 sudo nohup java -jar litemall.jar &
 
