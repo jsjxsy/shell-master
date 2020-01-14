@@ -41,6 +41,12 @@ sudo apt-get install mysql-server mysql-client
 
 sudo apt-get -f install
 
+#先查看一下debian-sys-maint用户的默认密码
+sudo cat /etc/mysql/debian.cnf 
+
+#2.使用debian-sys-maint用户及密码连接MySQL
+mysql -udebian-sys-maint -pfjEyI0TUWiQiDKvi
+
 #jar
 sudo nohup java -jar litemall.jar &
 
