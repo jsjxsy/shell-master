@@ -70,5 +70,9 @@ sudo nohup java -jar litemall.jar &
  java -version
  ps -ef|grep java
 
+#sudo: java: command not found
+#在用户管理权限配置sudoers中加配一条默认环境变量
+vim   /etc/sudoers
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/mydata/jdk1.8.0_151/bin
 #zip
 yum install -y unzip zip
